@@ -1,0 +1,301 @@
+
+.catalog {
+  padding: 70px 7%;
+  background: #0e0e13;
+  color: #f5f5fb;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.heading h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  max-width: 600px;
+  color: #a4a4b4;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border: 1px solid #383044;
+  border-radius: 10px;
+  background: #191620;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+
+.counter:hover {
+  border-color: #a78bfa;
+}
+
+.counterHeart {
+  color: #c4a5fd;
+  font-size: 27px;
+}
+
+.counterInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.counterInfo strong {
+  color: #fff;
+  font-size: 22px;
+}
+
+.counterInfo small {
+  color: #aaaabb;
+  font-size: 12px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.filters button {
+  padding: 11px 16px;
+  border: 1px solid #30303b;
+  border-radius: 7px;
+  background: #17171f;
+  color: #c2c2cf;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.filters button:hover {
+  border-color: #8b5cf6;
+}
+
+.filters button.active {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #292934;
+  border-radius: 12px;
+  background: #17171f;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #7657b9;
+}
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #252530;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .image {
+  transform: scale(1.03);
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.gameHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gameHeading h3 {
+  color: #f5f5fb;
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.heart {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #b7b7c6;
+  cursor: pointer;
+  font-size: 27px;
+  line-height: 1;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.heart:hover {
+  color: #c4a5fd;
+  transform: scale(1.1);
+}
+
+.heart.selected {
+  color: #c4a5fd;
+}
+
+.genre {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: #29213b;
+  color: #c4a5fd;
+  font-size: 11px;
+}
+
+.description {
+  min-height: 66px;
+  color: #b0b0bf;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 16px 0;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-height: 56px;
+  color: #9999aa;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.platform strong {
+  color: #d4d4df;
+  font-size: 12px;
+}
+
+.favoriteButton {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+  border: 1px solid #7657b9;
+  border-radius: 7px;
+  background: transparent;
+  color: #d4c5ff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.favoriteButton:hover {
+  background: #29213b;
+}
+
+.favoriteButton.removeButton {
+  border-color: #3d354f;
+  background: #29213b;
+}
+
+.empty {
+  padding: 55px 20px;
+  border: 1px dashed #3a3548;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.emptyHeart {
+  color: #c4a5fd;
+  font-size: 44px;
+}
+
+.empty h3 {
+  color: #f5f5fb;
+  margin: 12px 0;
+}
+
+.empty p {
+  max-width: 420px;
+  margin: 0 auto 22px;
+  color: #aaaabb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.exploreButton {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #8b5cf6;
+  color: white;
+  cursor: pointer;
+}
+
+.exploreButton:hover {
+  background: #7043dc;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalog {
+    padding: 55px 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog {
+    padding: 45px 5%;
+  }
+
+  .counter {
+    padding: 12px 16px;
+  }
+}
