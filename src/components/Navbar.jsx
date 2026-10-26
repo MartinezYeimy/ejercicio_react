@@ -1,7 +1,7 @@
 
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function Navbar({ darkMode, toggleTheme }) {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
@@ -14,6 +14,19 @@ function Navbar() {
           <a href="#catalogo">Catálogo</a>
           <a href="#favoritos">Favoritos</a>
         </div>
+
+        <button
+          type="button"
+          className={styles.themeButton}
+          onClick={toggleTheme}
+          aria-label={
+            darkMode
+              ? "Cambiar a modo claro"
+              : "Cambiar a modo oscuro"
+          }
+        >
+          {darkMode ? "☀️ Modo claro" : "🌙 Modo oscuro"}
+        </button>
       </nav>
     </header>
   );

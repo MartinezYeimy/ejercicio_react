@@ -1,3 +1,4 @@
+
 .header {
   position: relative;
   z-index: 10;
@@ -10,7 +11,7 @@
 .navbar {
   width: 100%;
   min-height: 68px;
-  padding: 0 24px;
+  padding: 12px 24px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -47,7 +48,32 @@
   color: var(--accent);
 }
 
-@media (max-width: 500px) {
+.themeButton {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--social-bg);
+  color: var(--text-h);
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 13px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.themeButton:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.themeButton:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
   .navbar {
     padding: 16px;
     flex-wrap: wrap;
@@ -63,5 +89,9 @@
 
   .links a {
     font-size: 12px;
+  }
+
+  .themeButton {
+    margin-top: 4px;
   }
 }
